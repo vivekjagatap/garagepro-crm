@@ -337,7 +337,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Quick Install Prompt Pill at the top for small viewports to highlight mobile app feel */}
-      <div className="xl:hidden bg-indigo-950 text-white py-2 px-4 flex items-center justify-between text-xs font-sans print:hidden" id="mobile-pwa-banner">
+      <div className="md:hidden bg-indigo-950 text-white py-2 px-4 flex items-center justify-between text-xs font-sans print:hidden" id="mobile-pwa-banner">
         <div className="flex items-center gap-2">
           <div className="h-6 w-6 bg-indigo-600 text-white font-black rounded-md flex items-center justify-center text-xs shrink-0">
             A
@@ -368,7 +368,7 @@ export default function App() {
           </div>
 
           {/* Center navigation tabs header */}
-          <nav className="hidden xl:flex items-center gap-1 text-xs font-semibold font-sans whitespace-nowrap" id="desktop-menubar">
+          <nav className="hidden md:flex items-center gap-1 text-xs font-semibold font-sans whitespace-nowrap" id="desktop-menubar">
             <button
               onClick={() => setActiveTab('dashboard')}
               className={`flex items-center gap-1.5 p-2 px-3.5 rounded-xl cursor-pointer transition ${
@@ -440,7 +440,7 @@ export default function App() {
           <div className="flex items-center gap-2.5 font-sans shrink-0" id="quick-indicators">
             <button
               onClick={() => setShowInstallModal(true)}
-              className="hidden xl:inline-flex items-center gap-1.5 text-[11px] font-black text-indigo-700 bg-indigo-50 border border-indigo-200 hover:bg-indigo-100 rounded-full px-3 py-1.5 cursor-pointer shadow-xs transition duration-150-ease"
+              className="hidden md:inline-flex items-center gap-1.5 text-[11px] font-black text-indigo-700 bg-indigo-50 border border-indigo-200 hover:bg-indigo-100 rounded-full px-3 py-1.5 cursor-pointer shadow-xs transition duration-150-ease"
               title="Install Mobile stand-alone CRM Web App"
             >
               <Smartphone className="h-3.5 w-3.5 text-indigo-650 animate-pulse" /> Install App
@@ -453,7 +453,7 @@ export default function App() {
       </header>
 
       {/* Mobile Sticky Navigation Bottom Bar - Beautiful Backdrop blur and premium layout bubbles */}
-      <nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-150 p-1 py-1.5 flex items-center justify-around z-45 xl:hidden print:hidden shadow-[0_-4px_16px_rgba(0,0,0,0.03)]" id="mobile-menubar">
+      <nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-150 p-1 py-1.5 flex items-center justify-around z-45 md:hidden print:hidden shadow-[0_-4px_16px_rgba(0,0,0,0.03)]" id="mobile-menubar">
         <button 
           onClick={() => setActiveTab('dashboard')} 
           className={`relative flex flex-col items-center gap-0.5 p-1 pb-2 rounded-xl cursor-pointer transition duration-150 flex-1 min-w-0 ${
@@ -546,7 +546,7 @@ export default function App() {
       </nav>
 
       {/* Main Page Layout Content Section with responsive bounding boxes */}
-      <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 pb-28 xl:pb-8" id="viewport-workspace">
+      <main className="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 pb-28 md:pb-8" id="viewport-workspace">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
@@ -778,7 +778,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Footer credits and copyright bar - Hidden on print layout */}
-      <footer className="py-6 border-t border-gray-150 text-center text-xs text-gray-400 bg-white print:hidden mt-auto mb-16 xl:mb-0" id="terminal-footer">
+      <footer className="py-6 border-t border-gray-150 text-center text-xs text-gray-400 bg-white print:hidden mt-auto mb-16 md:mb-0" id="terminal-footer">
         <p className="font-sans">© 2026 AutoServe CRM. Standalone application enabled. Powered by Google AI Studio.</p>
       </footer>
     </div>
