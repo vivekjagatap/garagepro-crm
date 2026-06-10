@@ -1,0 +1,17 @@
+{
+  "name": "garagepro-crm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GaragePro CRM — Full-stack garage/workshop management system for Indian auto workshops",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
